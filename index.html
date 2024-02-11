@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />    
+    <link rel="stylesheet" href="mediaqueries.css" />    
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Labib Sarwar</div>
+        <div class="heading-links">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Technical Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Info</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="mobile-nav">
+        <div class="logo">Labib Sarwar</div>
+        <div class="mobile-menu">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Technical Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact Info</a></li>
+            </div>
+        </div>
+    </nav> 
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/pic-1-removebg.png" alt="Labib Sarwar profile-pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello! I'm</p>
+            <h1 class="title">Labib Sarwar</h1>
+            <p class="section__text__p2">Computer Science Student at Toronto Metropolitan 
+                University</p>
+            <div class="btn-container">
+                <button 
+                    class="btn btn-color-1" 
+                    onclick="window.open('./assets/Labib Sarwar Resume.pdf')">
+                    Resume
+                </button>
+                <button class="btn btn-color-2" onclick="location.href='./#contact'">
+                    Contact
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile"
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/labib-sarwar-127510247/'"/>
+                <img src="./assets/github.png" alt="My Github"
+                class="icon" 
+                onclick="location.href='https://github.com/labibswr'"/>
+            </div>
+        </div>
+        <img src="assets/arrow.png" alt="arrow icon" class="icon arrow" 
+        onclick="location.href='./#about'">
+    </section>
+    <section id="about">
+        <p class="section__text__p1">More</p>
+        <h1 class="title-2">About Me</h1>
+        <div class="section-container">
+            <div class="about_pic-container">
+                <img src="./assets/about-pic.jpeg" alt="profile-pic"
+                class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container-1">
+                        <img src="./assets/experience.png" alt="Education icon"
+                        class="icon"/>
+                        <h3>Education</h3>
+                        <br />
+                        <p>Bachelor of Science (Honours) in Computer Science at
+                            <br /> <b><em>Toronto Metropolitan University</em></b><p>
+                    </div>
+                    <div class="details-container-2">
+                        <img src="./assets/education.png" alt="Experience icon"
+                        class="icon"/>
+                        <h3>Experience</h3>
+                        <br />
+                        <p>Member of the Undergraduate Science 
+                            Society of Toronto Metropolitan (USSTM) - <em>November 2023 to Present</em><p>
+                        <br />
+                        <p>Peer Tutor at SATEC @ W.A. Porter Collegiate Institute - <br /> 
+                            <em>October 2022 to June 2023</em><p> 
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Hello! My name is Labib Sarwar. I am a first-year Computer Science student
+                        at Toronto Metropolitan University. I was born in Bangladesh and then immigrated
+                        to Canada when I was 5 years old. For the past 13 years, I have made Toronto
+                        my home. I have always enjoyed technology from a young age to the point where 
+                        I am now pursuing studies in this field and I am loving it! I am an aspiring software 
+                        engineer and have keen interests in many fields of computer science specifically but 
+                        not limited to software development, machine learning, quantum computing, 
+                        and data science. I have many hobbies; I enjoy sports and have competed in tournaments for 
+                        volleyball, cricket, soccer, baseball, and badminton. I enjoy music and have had a few years 
+                        experience playing the french horn at a young age. 
+                        Throughout the years, I have practiced programming and have developed my skills
+                        in languages such as Python, Java, C++, JavaScript, HTML, and CSS. I am continuously
+                        looking to strive further to broaden my wings and seek out new opportunities available
+                        to me.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="assets/arrow.png" alt="arrow icon" class="icon arrow" 
+        onclick="location.href='./#skills'">
+    </section>
+    <section id="skills">
+        <p class="section__text__p1">My Featured</p>
+        <h1 class="title-2">Technical Skills</h1>
+        <div class="skills-details-container">
+            <div class="about-container">
+                <div class="skill-container">
+                    <h2 class="skill-subtitle">Languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/python.png" alt="skill-icon" class="icon"/>
+                            <div>
+                                <h3>Python</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/java.png" alt="skill-icon" class="icon"/>
+                            <div>
+                                <h3>Java</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/cpp.png" alt="skill-icon" class="icon"/>
+                            <div>
+                                <h3>C++</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/javascript.png" alt="skill-icon" class="icon"/>
+                            <div>
+                                <h3>JavaScript</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/html.png" alt="skill-icon" class="icon"/>
+                            <div>
+                                <h3>HTML</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/css.png" alt="skill-icon" class="icon"/>
+                            <div>
+                                <h3>CSS</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="skill-container">
+                    <h2 class="skill-subtitle">Technologies and Software</h2>
+                    <div class="article-container-2">
+                        <article>
+                            <img src="./assets/Microsoft.png" alt="skill-icon" class="icon"/>
+                            <div>
+                                <h3>Microsoft Office</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/arduino.png" alt="skill-icon" class="icon"/>
+                            <div>
+                                <h3>Arduino</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/vscode.png" alt="skill-icon" class="icon"/>
+                            <div>
+                                <h3>Visual Studio</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/PyCharm.png" alt="skill-icon" class="icon"/>
+                            <div>
+                                <h3>PyCharm</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/spyder.png" alt="skill-icon" class="icon"/>
+                            <div>
+                                <h3>Spyder</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/cisco.png" alt="skill-icon" class="icon"/>
+                            <div>
+                                <h3>Cisco Packet Tracer</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/autocad.png" alt="skill-icon" class="icon"/>
+                            <div>
+                                <h3>Autodesk AutoCAD</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/tinkercad.png" alt="skill-icon" class="icon"/>
+                            <div>
+                                <h3>Autodesk TinkerCAD</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/python.png" alt="skill-icon" class="icon"/>
+                            <div>
+                                <h3>Python Pygame</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="assets/arrow.png" alt="arrow icon" class="icon arrow" 
+        onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My</p>
+        <h1 class="title-2">Projects</h1>
+        <div class="about-container">
+            <div class="details-container-1 color-container">
+                <div class="article-container-proj">
+                    <img src="./assets/arduino lights.png" alt="Project 2" class="project-img"/>
+                </div>
+                <h2 class="skill-subtitle project-title">Traffic Light Simulator</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-1 project-btn" 
+                    onclick="location.href='https://github.com/labibswr/Traffic-Light-Simulator'">
+                    Github</button>
+                    <button class="btn btn-color-1 project-btn" 
+                    onclick="location.href='https://www.tinkercad.com/things/lVtaTXODDtc-traffic-light-simulator?sharecode=QgKvaEuyrx3nhSLHNe5r8UBiFM1xIB8SGPdkmAejdO0'">
+                    TinkerCAD</button>   
+                </div>
+            </div>
+            <div class="details-container-1 color-container">
+                <div class="article-container-proj">
+                    <img src="./assets/fractal.png" alt="Project 3" class="project-img"/>
+                </div>
+                <h2 class="skill-subtitle project-title">Mandelbrot Set Python Implementation</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-1 project-btn" 
+                    onclick="location.href='https://github.com/labibswr/mandelbrot_set_python'">
+                    Github</button>
+                </div>
+            </div>
+            <div class="details-container-1 color-container">
+                <div class="article-container-proj">
+                    <img src="./assets/Stranded.jpg" alt="Project 1" class="project-img"/>
+                </div>
+                <h2 class="skill-subtitle project-title">Stranded</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-1 project-btn" 
+                    onclick="location.href='https://github.com/labibswr/Stranded'">
+                    Github</button>
+                </div>
+            </div>
+        </div>
+        
+        <img src="assets/arrow.png" alt="arrow icon" class="icon arrow" 
+        onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <span>
+            <div class="contact-info-container">
+                
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon"/>
+                <p><a href="mailto:labib.sarwar@torontomu.ca">labib.sarwar@torontomu.ca</a></p>
+            </div>
+            <br>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
+                <p><a href="https://www.linkedin.com/in/labib-sarwar-127510247/">LinkedIn</a></p>
+            </div>
+            <br>
+            <div class="contact-info-container">
+                <img src="./assets/phone.png" alt="Phone icon" class="icon contact-icon"/>
+                <p><a href="tel:437-238-9639">Call Me</a></p>
+            </div>
+            </span>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Technical Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Info</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Labib Sarwar. All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
